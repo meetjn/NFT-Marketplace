@@ -1,7 +1,91 @@
-Happy Svg:
-data:image/svg+xml;base64,
-PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgd2lkdGg9IjQwMCIgIGhlaWdodD0iNDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgZmlsbD0ieWVsbG93IiByPSI3OCIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGcgY2xhc3M9ImV5ZXMiPgogICAgPGNpcmNsZSBjeD0iNzAiIGN5PSI4MiIgcj0iMTIiLz4KICAgIDxjaXJjbGUgY3g9IjEyNyIgY3k9IjgyIiByPSIxMiIvPgogIDwvZz4KICA8cGF0aCBkPSJtMTM2LjgxIDExNi41M2MuNjkgMjYuMTctNjQuMTEgNDItODEuNTItLjczIiBzdHlsZT0iZmlsbDpub25lOyBzdHJva2U6IGJsYWNrOyBzdHJva2Utd2lkdGg6IDM7Ii8+Cjwvc3ZnPg==
+# Foundry NFT
 
-Sad Svg:
-data:image/svg+xml;base64,
-PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/Pgo8c3ZnIHdpZHRoPSIxMDI0cHgiIGhlaWdodD0iMTAyNHB4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik01MTIgNjRDMjY0LjYgNjQgNjQgMjY0LjYgNjQgNTEyczIwMC42IDQ0OCA0NDggNDQ4IDQ0OC0yMDAuNiA0NDgtNDQ4Uzc1OS40IDY0IDUxMiA2NHptMCA4MjBjLTIwNS40IDAtMzcyLTE2Ni42LTM3Mi0zNzJzMTY2LjYtMzcyIDM3Mi0zNzIgMzcyIDE2Ni42IDM3MiAzNzItMTY2LjYgMzcyLTM3MiAzNzJ6Ii8+CiAgPHBhdGggZmlsbD0iI0U2RTZFNiIgZD0iTTUxMiAxNDBjLTIwNS40IDAtMzcyIDE2Ni42LTM3MiAzNzJzMTY2LjYgMzcyIDM3MiAzNzIgMzcyLTE2Ni42IDM3Mi0zNzItMTY2LjYtMzcyLTM3Mi0zNzJ6TTI4OCA0MjFhNDguMDEgNDguMDEgMCAwIDEgOTYgMCA0OC4wMSA0OC4wMSAwIDAg MS05NiAwem0zNzYgMjcyaC00OC4xYy00LjIgMC03LjgtMy4yLTguMS03LjRDNjA0IDYzNi4xIDU2Mi41IDU5NyA1MTIgNTk3cy05Mi4xIDM5LjEtOTUuOCA4OC42Yy0uMyA0LjItMy45IDcuNC04LjEgNy40SDM2MGE4IDggMCAwIDEtOC04LjRjNC40LTg0LjMgNzQuNS0xNTEuNiAxNjAtMTUxLjZzMTU1LjYgNjcuMyAxNjAgMTUxLjZhOCA4IDAgMCAxLTggOC40em0yNC0yMjRhNDguMDEgNDguMDEgMCAwIDEgMC05NiA0OC4wMSA0OC4wMSAwIDAgMSAwIDk2eiIvPgogIDxwYXRoIGZpbGw9IiMzMzMiIGQ9Ik0yODggNDIxYTQ4IDQ4IDAgMSAwIDk2IDAgNDggNDggMCAxIDAtOTYgMHptMjI0IDExMmMtODUuNSAwLTE1NS42IDY3LjMtMTYwIDE1MS42YTggOCAwIDAgMCA4IDguNGg0OC4xYzQuMiAwIDcuOC0zLjIgOC4xLTcuNCAzLjctNDkuNSA0NS4zLTg4LjYgOTUuOC04OC42czkyIDM5LjEgOTUuOCA4OC42Yy4zIDQuMiAzLjkgNy40IDguMSA3LjRINjY0YTggOCAwIDAgMCA4LTguNEM2NjcuNiA2MDAuMyA1OTcuNSA1MzMgNTEyIDUzM3ptMTI4LTExMmE0OCA0OCAwIDEgMCA5NiAwIDQ4IDQ4IDAgMSAwLTk2IDB6Ii8+Cjwvc3ZnPg==
+In the Mood Nft Project, we go through creating 2 different kinds of NFTs.
+
+An IPFS Hosted NFT
+An SVG NFT (Hosted 100% on-chain)
+
+## Getting Started
+
+### Requirements
+
+    git
+
+### Quickstart
+
+    git clone https://github.com/meetjn/NFT-Marketplace
+    cd NFT-Marketplace
+    forge install
+    forge build
+
+## Usage
+
+### Start a local node
+
+        make anvil
+
+## Deploy
+
+This will default to your local node. You need to have it running in another terminal in order for it to deploy.
+
+    make deploy
+
+### Test Coverage
+
+    forge coverage
+
+## Deployment to a testnet or mainnet
+
+1. Setup environment variables
+
+You'll want to set your SEPOLIA_RPC_URL and PRIVATE_KEY as environment variables. You can add them to a .env file, similar to what you see in .env.example.
+
+PRIVATE_KEY: The private key of your account (like from metamask). NOTE: FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT.
+You can learn how to export it here.
+
+SEPOLIA_RPC_URL: This is url of the goerli testnet node you're working with. You can get setup with one for free from Alchemy
+Optionally, add your ETHERSCAN_API_KEY if you want to verify your contract on Etherscan.
+
+Get testnet ETH
+
+Head over to faucets.chain.link and get some tesnet ETH. You should see the ETH show up in your metamask.
+
+Deploy (IPFS NFT)
+make deploy ARGS="--network sepolia"
+Deploy (SVG NFT)
+make deploySvg ARGS="--network sepolia"
+
+## Scripts
+
+After deploy to a testnet or local net, you can run the scripts.
+
+Using cast deployed locally example:
+
+cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
+or, to create a ChainlinkVRF Subscription:
+
+make createSubscription ARGS="--network sepolia"
+
+## Base64
+
+To get the base64 of an image, you can use the following command:
+
+    echo "data:image/svg+xml;base64,$(base64 -i ./images/dynamicNft/happy.svg)"
+
+Then, you can get the base64 encoding of the json object by placing the imageURI into happy_image_uri.json then running:
+
+    echo "data:application/json;base64,$(base64 -i ./images/dynamicNft/happy_image_uri.json)"
+
+## Estimate gas
+
+You can estimate how much gas things cost by running:
+
+    forge snapshot
+
+And you'll see and output file called .gas-snapshot
+
+## Formatting
+
+To run code formatting:
+
+    forge fmt
