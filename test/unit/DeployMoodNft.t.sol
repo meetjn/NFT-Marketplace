@@ -11,7 +11,5 @@ contract DeployMoodNftTest is Test {
         deployMoodNft = new DeployMoodNft();
     }
 
-    function testConvertSvgToUri() public view {
-        
-    }
+    function testConvertSvgToUri() public view {}
 }
